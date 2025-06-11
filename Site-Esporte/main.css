@@ -1,0 +1,98 @@
+:root {
+    --red: #ff0000be;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--red);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--red);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: var(--fontColor);
+}
+
+body {
+    background: var(--bg);
+}
+
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.open-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.open-container img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid var(--fontColor);
+    padding: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fontColor);
+}
+
+
+.slide-container {
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    animation: slideAnimation 9s infinite ease-in-out;
+}
+
+.slider-image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animação do carrossel */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100vw); }
+    66.66% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
+}
