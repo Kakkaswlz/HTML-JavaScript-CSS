@@ -1,0 +1,46 @@
+body{
+    font-family: monospace;
+}
+tr{
+    font-family: helvetica;
+}
+th{
+    table-layout: circle;
+}
+.table {
+   table-layout: square;
+}
+
+#msg {
+
+    font-family: monospace;
+    
+    }
+
+
+.dark-theme{
+    color: #FFFFFF;
+    background: #000000;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.open-container{
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid var(--fontColor);
+    padding: 10px;
+}
