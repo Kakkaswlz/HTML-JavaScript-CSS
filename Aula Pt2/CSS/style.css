@@ -1,0 +1,133 @@
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: rgb(76, 88, 100);
+ margin: 0;
+ padding: 0;
+ color: aliceblue;
+ text-align: left;
+ line-height: 1.5;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+header{
+    background-color:rgb(30, 52, 70);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(255, 255, 255) 3px solid;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    min-height: 70px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    padding: 0 10px;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.secao{
+    padding: 40px 20px;
+    margin: 60px;
+    background: linear-gradient( rgb(76, 88, 100), rgb(30, 52, 70)) ;
+    border-radius: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgb(1, 2, 3);
+}
+
+h2{
+    color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 10px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: aliceblue;
+}
+
+.hobbies{
+    max-width: 100%;
+    height: 100%;
+    width: 500px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+}
+thead{
+    background: linear-gradient( rgb(76, 88, 100), rgb(30, 52, 70)) ;
+}
+video{
+   max-width: 100%;
+    height: 100%;
+    width: 900px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.Formulario{
+    margin-bottom: 20px;
+}
+.Formulario label{
+    display: block;
+    margin-bottom: 5px;
+}
+.Formulario input, textarea{
+    width: 98%;
+    border-radius: 5px ;
+    padding: 10px;
+}
+button{
+    display: block;
+    width: 50%;
+    border-radius: 3px;
+    background: gray;
+    color: white;
+   
+}
+button:hover{
+   background: rgb(30, 52, 70);
+}
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+     background-color:rgb(30, 52, 70);
+     color: aliceblue;
+     text-align: center;
+      border-top: rgb(255, 255, 255) 3px solid;
+}
