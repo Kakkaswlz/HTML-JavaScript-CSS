@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Santos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+       
+       <h1> Bem-Vindo à La Santos Relojoaria </h1>
+        <button id="menu-button" aria-label="Abrir menu">☰</button> 
+        
+       <nav>
+         <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#offerts">Destaques</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+         </ul>
+        </nav>
+       
+    </header>
+       <div id="side-menu" class="side-menu">
+      <button id="close-menu" aria-label="Fechar menu">&times;</button>
+         <nav>
+          <ul>
+             <div class="menu-item">
+                 <a href="index.html">Home</a>
+             </div>
+             
+
+             <a href="#categorias" id="submenu-toggle" aria-expanded="false" aria-controls="submenu-list">Categorias ▼</a>
+                    <ul id="submenu-list" class="submenu" hidden>
+                        <li><a href="Casuais.html">Relógios Casuais</a></li>
+                        <li><a href="sociais.html">Relógios Sociais</a></li>
+                        <li><a href="esportivos.html">Relógios Esportivos</a></li>
+                        <li><a href="smarthwatches.html">Smartwatches</a></li>
+                        <li><a href="mergulho.html">Relógios de Mergulho</a></li>
+           </ul>
+           <div class="menu-item">
+                   <a href="contato.html">Contato</a>
+                </div>
+         </nav>
+     </div>
+
+        <main>
+            <div class="container">
+                <section id="home" class="secao">
+                    <h2>Onde o tempo ganha elegância</h2>
+                    <p>Na La Santos, não vendemos apenas relógios. Oferecemos histórias para serem carregadas no pulso,
+                    <br>legados para serem transmitidos e a precisão de quem entende que o verdadeiro luxo é ter tempo para o
+                    <br>que importa.
+                </section>
+                
+
+
+          <section id="offerts" class="secao">
+  <h2>Relógios em Destaque</h2>
+  <div class="imagem-destaques">
+    <div class="destaque-card">
+      <img src="Destaque1.png" alt="Relógio Tommy Hilfiger Masculino Couro Marrom 1791895">
+      <p><strong>Relógio Tommy Hilfiger Masculino Couro Marrom 1791895</strong></p>
+      <p>R$ 850,00<br><strong>R$ 595,00</strong></p>
+    </div>
+    <div class="destaque-card">
+      <img src="Destaque2.png" alt="Relógio Movado Masculino Aço Prateado 3601231">
+      <p><strong>Relógio Movado Masculino Aço Prateado 3601231</strong></p>
+      <p>R$ 4.650,00<br><strong>R$ 4.050,00</strong></p>
+    </div>
+    <div class="destaque-card">
+      <img src="Destaque3.png" alt="Relógio CASSIO EFV-610D-3CV">
+      <p><strong>Relógio CASSIO EFV-610D-3CV</strong></p>
+      <p>R$ 879,00<br><strong>R$ 550,00</strong></p>
+    </div>
+  </div>
+</section>
+           
+           
+           
+           
+           
+                <div class="slide-container">
+                 <div class="image-container">
+                    <img src="Slider1.jpg" class="slider-image" alt="Imagem 1">
+                    <img src="Slider2.jpg" class="slider-image" alt="Imagem 2">
+                    <img src="Slider3.jpg" class="slider-image" alt="Imagem 3">
+                     <img src="Logo.png"class="slider-image" alt="Imagem 4">
+                 </div>
+            </div>
+
+            
+
+
+            <section id="about" class="secao">
+                <h2>Quem Somos</h2>
+                <p>Bem-vindo à La Santos Relojoaria, um legado de precisão, sofisticação e arte em forma de tempo.
+                    <br> Fundada com a missão de celebrar momentos únicos, nossa marca combina a tradição relojoeira europeia com a excelência e confiança que o sobrenome Santos representa.
+      <br>Cada peça em nossa coleção é cuidadosamente selecionada ou projetada para aqueles que entendem que um relógio vai além de marcar horas: 
+      <br><strong>É uma expressão de identidade, conquista e estilo atemporal.</p></strong>
+            </section>
+              </div>
+        </main>
+       
+        <footer>
+ <p><strong>Email:</strong>
+            <br><strong>kauaprestes1a@gmail.com</strong>
+        </p>Para Trocas/Devoluções por Arrependimento:
+
+<br>O produto NÃO pode ter sido usado, vestido ou ter sinais de manuseio inadequado.
+
+<br>Todos os selos, etiquetas, adesivos protetores e embalagens originais (caixa interna, externa, estojos e manuais) devem estar intactos e ser devolvidos.
+
+<br>O certificado de autenticidade e garantia deve ser devolvido em perfeito estado.
+
+<br>Para Produtos com Defeito:
+
+<br>Em caso de defeito de fabricação, entraremos em contato direto com a marca ou nosso técnico especializado para avaliação.
+
+<br>Após a confirmação do defeito, ofereceremos imediatamente as opções de: reparo pela assistência autorizada, troca por um produto idêntico ou a restituição do valor pago.
+
+
+         <p>&copy; 2025 La Santos</p>
+        </footer>
+        
+   
+    <script src="script.js"></script>
+    <script>
+  const menuButton = document.getElementById('menu-button');
+  const sideMenu = document.getElementById('side-menu');
+  const closeMenu = document.getElementById('close-menu');
+  menuButton.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+  });
+  closeMenu.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+  });
+  // Opcional: fechar menu ao clicar fora dele
+  window.addEventListener('click', (e) => {
+    if (!sideMenu.contains(e.target) && e.target !== menuButton) {
+      sideMenu.classList.remove('open');
+    }
+  });
+</script>
+<script>
+  const submenuToggle = document.getElementById('submenu-toggle');
+  const submenuList = document.getElementById('submenu-list');
+  submenuToggle.addEventListener('click', (e) => {
+    e.preventDefault(); // evita o comportamento padrão do link
+    const isOpen = submenuList.classList.contains('open');
+    if (isOpen) {
+      submenuList.classList.remove('open');
+      submenuList.setAttribute('hidden', '');
+      submenuToggle.setAttribute('aria-expanded', 'false');
+    } else {
+      submenuList.classList.add('open');
+      submenuList.removeAttribute('hidden');
+      submenuToggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+</script>
+
+</body>
+</html>

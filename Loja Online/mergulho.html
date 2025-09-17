@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio de Mergulho</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<header>
+    <h1>Relógio de Mergulho</h1>
+<button id="menu-button" aria-label="Abrir menu">☰</button> 
+</header>
+<div id="side-menu" class="side-menu">
+      <button id="close-menu" aria-label="Fechar menu">&times;</button>
+         <nav>
+          <ul>
+             <div class="menu-item">
+                 <a href="index.html">Home</a>
+             </div>
+             
+
+             <a href="#categorias" id="submenu-toggle" aria-expanded="false" aria-controls="submenu-list">Categorias ▼</a>
+                    <ul id="submenu-list" class="submenu" hidden>
+                        <li><a href="Casuais.html">Relógios Casuais</a></li>
+                        <li><a href="sociais.html">Relógios Sociais</a></li>
+                        <li><a href="esportivos.html">Relógios Esportivos</a></li>
+                        <li><a href="smarthwatches.html">Smartwatches</a></li>
+                        <li><a href="mergulho.html">Relógios de Mergulho</a></li>
+           </ul>
+           <div class="menu-item">
+                   <a href="contato.html">Contato</a>
+                </div>
+         </nav>
+     </div>
+<body>
+    <section id="offerts" class="secao">
+  <h2>Relógios em Destaque</h2>
+  <div class="imagem-destaques">
+    <div class="destaque-card">
+      <img src="Destaque1.png" alt="Relógio Tommy Hilfiger Masculino Couro Marrom 1791895">
+      <p><strong>Relógio Tommy Hilfiger Masculino Couro Marrom 1791895</strong></p>
+      <p>R$ 850,00<br><strong>R$ 595,00</strong></p>
+    </div>
+    <div class="destaque-card">
+      <img src="Destaque2.png" alt="Relógio Movado Masculino Aço Prateado 3601231">
+      <p><strong>Relógio Movado Masculino Aço Prateado 3601231</strong></p>
+      <p>R$ 4.650,00<br><strong>R$ 4.050,00</strong></p>
+    </div>
+    <div class="destaque-card">
+      <img src="Destaque3.png" alt="Relógio CASSIO EFV-610D-3CV">
+      <p><strong>Relógio CASSIO EFV-610D-3CV</strong></p>
+      <p>R$ 879,00<br><strong>R$ 550,00</strong></p>
+    </div>
+  </div>
+</section>
+</body>
+<script src="script.js"></script>
+    <script>
+  const menuButton = document.getElementById('menu-button');
+  const sideMenu = document.getElementById('side-menu');
+  const closeMenu = document.getElementById('close-menu');
+  menuButton.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+  });
+  closeMenu.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+  });
+  // Opcional: fechar menu ao clicar fora dele
+  window.addEventListener('click', (e) => {
+    if (!sideMenu.contains(e.target) && e.target !== menuButton) {
+      sideMenu.classList.remove('open');
+    }
+  });
+</script>
+<script>
+  const submenuToggle = document.getElementById('submenu-toggle');
+  const submenuList = document.getElementById('submenu-list');
+  submenuToggle.addEventListener('click', (e) => {
+    e.preventDefault(); // evita o comportamento padrão do link
+    const isOpen = submenuList.classList.contains('open');
+    if (isOpen) {
+      submenuList.classList.remove('open');
+      submenuList.setAttribute('hidden', '');
+      submenuToggle.setAttribute('aria-expanded', 'false');
+    } else {
+      submenuList.classList.add('open');
+      submenuList.removeAttribute('hidden');
+      submenuToggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+</script>
+</html>
