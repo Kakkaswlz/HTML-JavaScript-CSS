@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>W3C</h1>
+     <div class="container">
+  <h2>Quem é o W3C?</h2>
+    <p>É o World Wide Web Consortium, é uma organização internacional que define as regras e padrões para a web. O W3C é como a ABNT da Internet, ele vai criar as normas para que tudo funcione de forma consistente.
+</p>
+<h2>Para que os programadores precisam Validar seus códigos com a W3C?</h2>
+    <p>O programador tem que se preucupar em validar o seu código, para que ele funcione da mesma forma, ou similar, em todos os navegadores, o código válido evita erros de exibição e melhora a performance.</p>
+
+</div>
+<a href="pt1.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt3.html">
+  <button type="submit">Próximo</button>
+  </a>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Exemplificando a Estrutura do CSS</h1>
+     <div class="container">
+  <h2>Exemplo:</h2>
+   <img src="Imagens/EX5.png">
+
+    <h2>Explicação</h2>
+    <p>background-color → Cor de fundo</p>
+<p>border-radius → Arredondar cantos</p>
+<p>padding → Espaço interno</p>
+<p>margin → Espaço externo</p>
+<p>box-shadow → Sombra</p>
+
+
+</div>
+<a href="pt4.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt6.html">
+  <button type="submit">Próximo</button>
+  </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+</body>
+</html>

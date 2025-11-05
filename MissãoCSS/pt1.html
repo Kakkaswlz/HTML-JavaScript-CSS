@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Definições</h1>
+     <div class="container">
+  <h2>O que é?</h2>
+    <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência de documentos escritos em linguagens de marcação como HTML, controlando cores, fontes, layout, espaçamentos e outros aspectos visuais.</p>
+<h2>Qual a sua Função?</h2>
+    <p>A principal função do CSS é estilizar e dar layout às páginas web escritas em HTML, ele seria igual a decoração de uma casa, onde você pode decorar o design conforme o limite da sua imaginação, porém, sem não houver ele, a casa (HTML) ainda vai ser funcional</p>
+<h2>Por que Separar o CSS do HTML?</h2>
+    <p>Porque o código fica mais limpo e agradável, facilita nas modificações, onde para modificar é necessário apenas mudar um único arquivo para estilizar todas as páginas, além de ser necessário apenas mudar as informações no CSS para modificar algo no design. Também, ajuda na separação de tarefas, um exemplo são as empresas grandes, onde é separado quem irá fazer a estrutura (HTML) e o design (CSS).</p>
+    
+
+</div>
+<a href="index.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt2.html">
+  <button type="submit">Próximo</button>
+  </a>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+    
+</body>
+</html>

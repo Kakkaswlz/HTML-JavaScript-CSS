@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Quais são as 3 formas de conectar o HTML com o CSS?</h1>
+     <div class="container">
+  <h2>INLINE</h2>
+    <p>O estilo é aplicado diretamente dentro da tag HTML.</p>
+    <p>Ex: </p>
+    <img src="Imagens/EX1.png" alt="Exemplo 1">
+
+    <h2>INTERNA</h2>
+    <p>O estilo é definido dentro da tag style, no head, dentro do HTML.</p>
+    <p>Ex: </p>
+    <img src="Imagens/EX2.png" alt="Exemplo 1">
+
+    <h2>EXTERNA</h2>
+    <p>O arquivo é separado e linkado ao HTML, facilitando a perfomance, limpeza e deixando de facil manutenibilidade o código, sendo a opção mais optada por empresas</p>
+    <p>Ex: No Head do HTML </p>
+    <img src="Imagens/EX3.png" alt="Exemplo 1">
+    <p>Ex: No Arquivo CSS </p>
+    <img src="Imagens/EX4.png" alt="Exemplo 1">
+
+ 
+</div>
+<a href="pt2.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt4.html">
+  <button type="submit">Próximo</button>
+  </a>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+    
+</body>
+</html>

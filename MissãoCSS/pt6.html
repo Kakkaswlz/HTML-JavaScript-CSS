@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>SELETORES</h1>
+     <div class="container">
+  <h2>Para que serve?</h2>
+   <p>O CSS usa seletores para selecionar os elementos HTML corretos.</p>
+
+    <h2>Quais são?</h2>
+      <table>
+            <tr>
+                <th>SELETOR</th>
+                <th>FUNÇÃO</th>
+                <th>SIMBOLO</th>
+                <th>EXEMPLO</th>
+            </tr>
+            <tr>
+                <td>TAG</td>
+                <td>Mira em tudas as tags com aquele nome</td>
+                <td></td>
+                <td>p{ }</td>
+            </tr>
+            <tr>
+                <td>CLASSE</td>
+                <td>Mira em tudo que possuir o atributo class</td>
+                <td>.</td>
+                <td>.destaque{ }</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Mira em um elemento único que possui aquele ID</td>
+                <td>#</td>
+                <td>#menu_principal{ }</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Ele mira em TODOS os elementos da página.</td>
+                <td>*</td>
+                <td>*{ }</td>
+            </tr>
+        </table>
+    
+
+</div>
+<a href="pt5.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt7.html">
+  <button type="submit">Próximo</button>
+  </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+</body>
+</html>

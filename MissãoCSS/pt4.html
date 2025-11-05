@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>A “Receita” do CSS</h1>
+     <div class="container">
+  <h2>O que é um Seletor?</h2>
+    <p>O seletor é o ponto de partida de qualquer regra CSS. Ele funciona como um "endereçamento" que identifica quais elementos HTML receberão os estilos definidos.</p>
+
+    <h2>O que é uma Propriedade?</h2>
+    <p>A propriedade define qual aspecto visual do elemento será alterado. É a "característica" que queremos modificar.</p>
+
+    <h2>O que é um Valor?</h2>
+    <p>O valor define a configuração específica para a propriedade. Ele responde "como" a propriedade será aplicada.</p>
+
+</div>
+<a href="pt3.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="pt5.html">
+  <button type="submit">Próximo</button>
+  </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+</body>
+</html>

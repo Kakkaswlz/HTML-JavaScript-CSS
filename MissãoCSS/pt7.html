@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão CSS</title>
+  <link rel="stylesheet" href="CSS/main.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>DESAFIO</h1>
+     <div class="container">
+  <h2>No CSS, como Juntar h1, h2 e h3 sem repetir?</h2>
+    <p>Agrupando todos os seletores.</p>
+
+    <h2>Ex:</h2>
+    <img src="Imagens/EX6.png">
+
+</div>
+<a href="pt6.html">
+  <button type="submit">Anterior</button>
+  </a>
+<a href="final.html">
+  <button type="submit">Próximo</button>
+  </a>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageLink = document.getElementById('pageLink');
+            
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                
+        
+                document.body.classList.add('body-exit');
+             
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 600); 
+            });
+        });
+    </script>
+    
+</body>
+</html>

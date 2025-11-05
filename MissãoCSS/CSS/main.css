@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+     font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.6;
+  background: rgba(5, 5, 5, 0.664);
+  color: #f0f0f0;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.body-exit {
+  animation: fadeOut 0.6s ease-in-out forwards;
+}
+
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container{
+    padding: 40px 20px;
+    margin:40px 200px;
+    background: linear-gradient(  rgba(108, 117, 124, 0.445), rgba(30, 32, 36, 0.322)) ;
+    border-radius: 15px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    min-height: 70px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #163bcf;
+    text-shadow: 3px 4px 10px #040d31;
+}
+
+h2{
+    margin: 10px;
+     text-shadow: 0 5px 5px #06144d;
+}
+
+button {
+    padding: 10px 20px;
+    margin:10px 20px;
+   background-color: #0a2c50;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgb(15, 55, 95);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #040d31;
+    padding: 10px;
+   
+}
+th{
+    text-shadow: 0 5px 5px #06144d;
+}
+
