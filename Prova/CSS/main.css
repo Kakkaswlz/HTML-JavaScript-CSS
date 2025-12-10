@@ -1,0 +1,94 @@
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+nav{
+    color: aliceblue;
+    margin: 1px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.527);
+    color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2{
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.767);
+    text-align: center;
+}
+
+.inicio{
+    margin: 50px;
+    text-align: center;
+
+}
+
+
+.container{
+    text-align: center;
+     background-color: gainsboro;
+     border-radius: 10px;
+     height: auto;
+     width: auto;
+    margin-top: 0px;
+}
+
+.imagem{
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.lista{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 380px;
+}
+
+.aproximar{
+    margin-top: 150px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.767);
+    text-align: center;
+}
+
+.card{
+
+    text-align: center;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: auto;    
+    text-shadow: 0 2px 10px rgba(3, 3, 3, 0.432);
+    color: rgb(75, 76, 77);
+}
+
+
+
+button{
+    color: rgb(0, 8, 10);
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+}
+
+button:hover{
+     background-color: rgba(50, 167, 235, 0.493); 
+     border-color: rgba(50, 167, 235, 0.493);
+     box-shadow: 5px 2px 10px rgba(50, 167, 235, 0.493);;
+}
